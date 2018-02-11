@@ -9,9 +9,8 @@ from codecs import decode
 KEY = 'B105F00D'
 INT_KEY = int(KEY, 16)
 
-
 def xor(block):
-    return '{:08X}'.format(int(block, 16) ^ INT_KEY)
+    return '{:08X}'.format((int(block, 16) ^ INT_KEY))
 
 def main():
     for filename in os.listdir('.'):
@@ -29,11 +28,16 @@ def main():
             output += block
             xor_output += xor(block)
 
-        with open('{}_plain'.format(filename), 'wb') as fp:
-            fp.write(decode(output, 'hex'))
-
-        with open('{}_xor'.format(filename), 'wb') as fp:
-            fp.write(decode(xor_output, 'hex'))
+        try:
+            print('output:  ' + output)
+            print('xor_out: ' + xor_output)
+            print('---------------------------------------')
+            with open('{}_plain'.format(filename), 'wb') as fp:
+                fp.write(decode(output, 'hex'))
+            with open('{}_xor'.format(filename), 'wb') as fp:
+                fp.write(decode(xor_output, 'hex'))
+        except Exception as e:
+            print(e)
 
     return 0
 
