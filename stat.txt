@@ -1,0 +1,102 @@
+File: /bin
+Owner: system
+Created: 19/11/1983
+Permissions: r
+
+    File: /bin/cat.bin
+    Size: 143
+    Owner: system
+    Created: 19/11/1983
+    Permissions: rx
+
+    File: /bin/ls.bin
+    Size: 134
+    Owner: system
+    Created: 19/11/1983
+    Permissions: rx
+
+    File: /bin/me.bin
+    Size: 116
+    Owner: system
+    Created: 19/11/1983
+    Permissions: rx
+
+    File: /bin/stat.bin
+    Size: 143
+    Owner: system
+    Created: 19/11/1983
+    Permissions: rx
+
+File: /boot
+Owner: system
+Created: 19/11/1983
+Permissions: r
+
+File: /dev
+Owner: system
+Created: 19/11/1983
+Permissions: r
+
+File: /home
+Owner: system
+Created: 19/11/1983
+Permissions: r
+
+    File: /home/admin
+    Owner: admin
+    Created: 19/11/1983
+    Permissions: -
+
+    File: /home/martin
+    Owner: martin
+    Created: 19/11/1983
+    Permissions: -
+
+    File: /home/unknown
+    Owner: unknown
+    Created: 1/08/2017
+    Permissions: r
+
+        File: /home/unknown/btc
+        Owner: unknown
+        Created: 1/08/2017
+        Permissions: -
+
+        File: /home/unknown/key.txt
+        Size: 1674
+        Owner: unknown
+        Created: 1/08/2017
+        Permissions: r
+
+    File: /home/user1
+    Owner: user1
+    Created: 20/07/2017
+    Permissions: r
+
+        File: /home/user1/__addr.sql
+        Size: 80
+        Owner: user1
+        Created: 20/07/2017
+        Permissions: r
+
+        File: /home/user1/deposits.sql
+        Size: 275
+        Owner: user1
+        Created: 20/07/2017
+        Permissions: r
+
+        File: /home/user1/service.bin
+        Size: 242
+        Owner: user1
+        Created: 20/07/2017
+        Permissions: rx
+
+File: /public
+Owner: admin
+Created: 19/11/1983
+Permissions: rw
+
+File: /system
+Owner: system
+Created: 19/11/1983
+Permissions: -
